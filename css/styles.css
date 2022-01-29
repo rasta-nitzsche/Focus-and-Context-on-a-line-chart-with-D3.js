@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+main{
+  border: 1px solid #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+fieldset {
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+fieldset legend {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+fieldset div {
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+fieldset input {
+  cursor: pointer;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.context .line {
+  stroke-width: 0.5px;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+
+.line.highlight {
+  fill-opacity: 1;
+  stroke-opacity: 1;
+}
+.focus .line.highlight {
+  stroke-width: 3;
+}
+.context .line.highlight {
+  stroke-width: 1;
+}
+
+.line.fadeout {
+  fill-opacity: 0.2;
+  stroke-opacity: 0.2;
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
