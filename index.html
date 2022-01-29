@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TP 02 INFOVIZ</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h2>
+      Diagramme de ligne comparant l'évolution des prix du
+      [Litecoin,Binance,Ethereum] du 01/08/2017 jusqu'à 06/07/2021
+    </h2>
+    <main>
+      <svg width="900" height="500"></svg>
+      <fieldset id="radios">
+        <legend>Filtrer les lignes</legend>
+        <div style="color: rgb(31, 119, 180)">
+          <input type="radio" name="ligne" id="litecoin" />
+          <label for="litecoin">litecoin</label>
+        </div>
+        <div style="color: rgb(44, 160, 44)">
+          <input type="radio" name="ligne" id="binance" />
+          <label for="binance">binance</label>
+        </div>
+        <div style="color: rgb(214, 39, 40)">
+          <input type="radio" name="ligne" id="ethereum" />
+          <label for="ethereum">ethereum</label>
+        </div>
+        <div>
+          <input checked type="radio" name="ligne" id="all" />
+          <label for="all">All</label>
+        </div>
+      </fieldset>
+    </main>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/fisheye.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
